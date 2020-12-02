@@ -31,8 +31,9 @@ const Post = ({post, setCurrentId}) => {
                  )}
                </Typography>
                </div>
+                 <Typography clasName={classes.title} gutterBottom variant="h5" component="h2">{post.title}</Typography>
                <CardContent>
-               <Typography className={classes.title} variant="h5" gutterBottom>
+               <Typography variant="body2" color="textSecondary" compnent="p">
                  {post.message}
                </Typography>
                </CardContent>
