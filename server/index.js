@@ -10,7 +10,7 @@ app.use(cors());
 app.use("/posts", require('./routes/posts'));
 
 
-const CONNECTION_URL = "mongodb+srv://jmccauley117:5Luci6us@cluster0.wwvu4.mongodb.net/Memories?retryWrites=true&w=majority"; 
+const {CONN_URI} = require('./config/config'); 
 
 const PORT = process.env.PORT || 5000; 
 
